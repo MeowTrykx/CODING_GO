@@ -1,0 +1,8 @@
+{
+    "player_name": "Poko",
+    "current_hp": 100,
+    "max_hp": 100,
+    "current_stamina": 100,
+    "max_stamina": 100,
+    "progress_stage": "tutorial_start"
+}

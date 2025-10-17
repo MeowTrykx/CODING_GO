@@ -1,0 +1,38 @@
+TO BE ADDED
+- Credits - DONE
+- Player Name selector
+- Tutorial Game
+- Sound Effects
+- Characters - NPC
+- Characters - BOSS/ENEMY
+- Character - MC - Expressions + Animations(Walk, Run, Pick Up, ETC)
+- STAGE PLATFORMS - Open World
+- Extra Items (Health, Atk Boost, Speed Boost)
+- Souls for GUI Health Bar
+- Elements (Fire, Water, Earth and Wind) - Avatar Type Shrimp.
+- 8-bit Musics
+- Dialogues
+- Settings Tab
+- Opening Animations
+- Story Line
+- Linkages of each Tabs for Smooth Transitions
+- MeowTrykx as as the Tutorial Helper :D
+- Elemental Codex for Attacks
+- Mana Bar - Health bar (Both NPC and MC)
+- Stats
+- Consumables
+- AtKs - BA, S1, S2, Ultimate
+- Codex Syntax, either individully boxed or on one whole spreadsheet.
+
+TO BE FIXED
+- credits.py code is having serious troubleshoots - FIXED.
+- MainMenu is crashing more than expected. (Settings and Start Button not working, Effects not working too)
+- linakges of File-Folders to the Actual .py codes because it's starting to be frustrating as the code doesn't fully register the files. - IDENTITIFYER NEEDED
+- json files cannot be read in settings.py - DONE
+
+REMINDERS to SELF:
+- MeowTrykx is mainly sick so she can't continue the code or making the other assets well atm.
+- Take some breaks from time to time.
+- Will continue on Friday.
+
+
