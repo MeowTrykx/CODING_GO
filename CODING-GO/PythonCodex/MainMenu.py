@@ -2,24 +2,25 @@ import pygame
 import sys
 import random
 from Credits import show_credits
-from Intro import show_tutorial
+#from World0 import 
+from SettingsTab import settings_menu
 
 pygame.init()
 
-# --- Fonts ---
+# Fonts
 font_button = pygame.font.Font("PythonCodex/Fonts/Pixeled.ttf", 36)
 
-# --- Colors ---
+# Colors
 CYAN = (0, 255, 255)
 DARK_BLUE = (0, 80, 255)
 BLACK = (0, 0, 0)
 
-# --- Matrix particle background ---
-particles = [[random.randint(0, 1080), random.randint(0, 585)] for _ in range(100)]  # screen size placeholder
+# Glitch
+particles = [[random.randint(0, 1080), random.randint(0, 585)] for _ in range(100)]
 
-# --- Load assets ---
+# Assets
 title_img = pygame.image.load("PythonCodex/Images/CodingGo.png").convert_alpha()
-mc_image = pygame.image.load("PythonCodex/Images/MainMC.png").convert_alpha()
+mc_image = pygame.image.load("PythonCodex/Player/MainMC.png").convert_alpha()
 mc_image = pygame.transform.smoothscale(mc_image, (450, 450))  # static MC image
 
 # --- Glitch transition (subtle) ---
@@ -50,7 +51,7 @@ def draw_particles(screen, width=1080, height=585):
 # --- Buttons ---
 buttons = [
     {"text": "Start", "y_offset": title_img.get_rect(topleft=(100, 80)).bottom + 30, "action": "start"},
-    {"text": "Settings", "y_offset": title_img.get_rect(topleft=(100, 80)).bottom + 90, "action": "settings"},
+    {"text": "Info", "y_offset": title_img.get_rect(topleft=(100, 80)).bottom + 90, "action": "Info"},
     {"text": "Credits", "y_offset": title_img.get_rect(topleft=(100, 80)).bottom + 150, "action": "credits"},
     {"text": "Exit", "y_offset": title_img.get_rect(topleft=(100, 80)).bottom + 210, "action": "exit"},
 ]
@@ -96,9 +97,9 @@ def main_menu(screen):
                     if text_rect.collidepoint(event.pos):
                         glitch_transition(screen)
                         if button["action"] == "start":
-                            show_tutorial(screen)
-                        elif button["action"] == "settings":
-                            pass  # Replace with settings_menu() if available
+                            pass # Replace with show_tutorial(screen) if available.
+                        elif button["action"] == "Info":
+                            settings_menu()
                         elif button["action"] == "credits":
                             show_credits(screen)
                         elif button["action"] == "exit":
@@ -107,3 +108,10 @@ def main_menu(screen):
 
         pygame.display.flip()
         clock.tick(60)
+
+# --- Run directly for testing ---
+if __name__ == "__main__":
+    pygame.init()
+    screen = pygame.display.set_mode((1080, 585))
+    pygame.display.set_caption("Main Menu")
+    main_menu(screen)

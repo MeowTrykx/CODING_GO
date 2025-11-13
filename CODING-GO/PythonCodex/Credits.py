@@ -35,9 +35,9 @@ except:
 # --- Member list (Order & Colors) ---
 credits_data = [
     ("Marc.png", "Marc Abhel", "Project Manager", RED),
-    ("JohnLemar.png", "John Lemar", "Documentation", BLUE),
+    ("JohnLemar.png", "John Lemar", "Game Tester", BLUE),
     ("Theresa.png", "Theresa", "Documentation", GREEN),
-    ("Raja.png", "Raja Sameer", "Game Tester", BLUE),
+    ("Raja.png", "Raja Sameer", "Documentation", BLUE),
     ("MeowTrykx.png", "MeowTrykx", "All-Arounder", ORANGE)
 ]
 

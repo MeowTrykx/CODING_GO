@@ -1,0 +1,37 @@
+#Health Bar
+max_hp = 100
+health = 20
+ratio = health / max_hp
+
+class HealthBar():
+    def _init_(self, x, y, w, h, max_hp):
+        self.x = x
+        self.y = y
+        self.w = w
+        self.h = h
+        self.hp = max_hp
+        self.max_hp = max_hp
+
+def draw (self, surface):
+    #HP ratio
+    ratio = self.hp / self.max_hp
+    pygame.draw.rect(surface, "red", (self.x, self.y, self.w, self.h))
+    pygame.draw.rect(surface, "blue", (self.x, self.y, self.w * ratio, self.h))
+
+health_bar = HealthBar(250, 200, 300, 40, 100)
+
+run = True
+while run:
+
+    screen.fill("Indigo")
+
+#Draw HP
+health_bar.draw(screen)
+
+for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+        run = False
+
+    pygame.display.flip()
+
+pygame.quit()

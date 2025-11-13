@@ -1,38 +1,45 @@
 TO BE ADDED
-- Credits - DONE
-- Player Name selector
-- Tutorial Game
+- Tutorial Game - semi DONE
 - Sound Effects
-- Characters - NPC
-- Characters - BOSS/ENEMY
-- Character - MC - Expressions + Animations(Walk, Run, Pick Up, ETC)
-- STAGE PLATFORMS - Open World
-- Extra Items (Health, Atk Boost, Speed Boost)
-- Souls for GUI Health Bar
-- Elements (Fire, Water, Earth and Wind) - Avatar Type Shrimp.
-- 8-bit Musics
+- Extra Items (Health, Atk Boost, Speed Boost) - Core
+- Elements (Fire, Water, Earth, Electric,  and Wind) - Avatar Type Shrimp.
+- 8-bit Musics - W0, W1, W2, W3
 - Dialogues
-- Settings Tab
-- Opening Animations
-- Story Line
-- Linkages of each Tabs for Smooth Transitions
+- Settings Tab in Game.
+- Opening Animations.
+- Story Line.
+- Linkages of each Tabs for Smooth Transitions.
 - MeowTrykx as as the Tutorial Helper :D
 - Elemental Codex for Attacks
-- Mana Bar - Health bar (Both NPC and MC)
-- Stats
+- Mana Bar - Health bar (Both Enemy and MC)
+- Stats in game and out the game
 - Consumables
-- AtKs - BA, S1, S2, Ultimate
-- Codex Syntax, either individully boxed or on one whole spreadsheet.
+
+SCRAPPED IDEAS:
+- STAGE PLATFORMS - Open World - SCRAPPED
+- AtKs - BA, S1, S2, Ultimate - SCRAPPED
+- Codex Syntax, either individully boxed or on one whole spreadsheet. - SCRAPPED
+
+COMPLETED:
+- Credits - DONE
+- Player Name selector - DONE
+- Characters - PLAYER - DONE
+- Characters - BOSS/ENEMY - DONE
+- Character - MC - Expressions + Animations(Walk, Run, Pick Up, ETC) - DONE
+- Cores for GUI Health Bar - DONE
+
+IDEAL Coded Syntax per battle
+- All Actions whether attack, defense, run are all typed like example:
++ Act.Run() - To run away from the enemy if the player doesn't wanna fight
++ Act.Attack.Element:Fire.FireBall() = Fire attack
++ Act.Defense.Element.Fire.FireWall() = Defense in Fire Element
++ Act.Item.CrunchyChoco() = MP regenerator
++ Act.Status.Enemy() = Check Enemy status
 
 TO BE FIXED
 - credits.py code is having serious troubleshoots - FIXED.
-- MainMenu is crashing more than expected. (Settings and Start Button not working, Effects not working too)
+- MainMenu is crashing more than expected. (Settings and Start Button not working, Effects not working too) - Settings is scrapped - turned into Info
 - linakges of File-Folders to the Actual .py codes because it's starting to be frustrating as the code doesn't fully register the files. - IDENTITIFYER NEEDED
 - json files cannot be read in settings.py - DONE
 
-REMINDERS to SELF:
-- MeowTrykx is mainly sick so she can't continue the code or making the other assets well atm.
-- Take some breaks from time to time.
-- Will continue on Friday.
-
-
+REMINDERs/NOTEs TO PROGRAMMER:
